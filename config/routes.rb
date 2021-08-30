@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :players, only: :index
+  get '/players/top_five', to: 'players#top_five'
+  resources :players
 end
